@@ -85,6 +85,7 @@ local servers = {
   prismals = {},
   gopls = {},
   golangci_lint_ls = {},
+  omnisharp = {},
   bashls = {},
   nil_ls = {},
   terraformls = {},

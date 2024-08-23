@@ -24,6 +24,7 @@
     nodePackages."@prisma/language-server"
     nodePackages.bash-language-server
     dockerfile-language-server-nodejs
+    
     # enable after updating and uninstall gopls from brew
     gopls
     golangci-lint-langserver
@@ -41,12 +42,14 @@
   startPlugins = with pkgs.vimPlugins; [
     which-key-nvim
     nvim-lspconfig
-
+    
     # completion
     nvim-cmp
     cmp-nvim-lsp
     cmp-path
     cmp-git
+    cmp-buffer
+    cmp-cmdline
     lsp_signature-nvim
     copilot-lua
     copilot-cmp
@@ -113,7 +116,8 @@
 
     # debugging
     nvim-dap
-
+    nvim-nio
+    nvim-dap-ui
     # diagnostics
     vim-startuptime
 
@@ -149,6 +153,13 @@
           '--stdio',
         },
       }
+
+      lspconfig.omnisharp.setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+        cmd = { 'OmniSharp' },
+      }
+
       EOF
     ''
   ];

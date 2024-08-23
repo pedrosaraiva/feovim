@@ -37,11 +37,11 @@
     "github-nvim-theme": {
       "flake": false,
       "locked": {
-        "lastModified": 1722474538,
-        "narHash": "sha256-EPHKWcn/2XSmdWRJp2Ta/WJQOim6Bl0yTY4uwZEUt60=",
+        "lastModified": 1723382669,
+        "narHash": "sha256-GoJOeqbBm0b766aZtce/n1Kq2zwbQ4UKRv7qgBlgQE8=",
         "owner": "projekt0n",
         "repo": "github-nvim-theme",
-        "rev": "b607c2cde988daca0cb43269fcf81acf73ba9f2d",
+        "rev": "6b461635230ccb5d0037f378fbe05a27c4ccf7cd",
         "type": "github"
       },
       "original": {
@@ -52,11 +52,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1722512416,
-        "narHash": "sha256-jBVlNMKcjpVUUY/HZpFxA8Oy6momPw9uUIw1yGXO2eo=",
+        "lastModified": 1724285327,
+        "narHash": "sha256-wfV3k3IhewyYIdd+1+rEO8s8MCjQMga6n1rkQp6B3aU=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "d67951898e81e3eda031547f43a950c67d80eca1",
+        "rev": "90f1516eb80d805cfa7b27234a6231f18fa32869",
         "type": "github"
       },
       "original": {
