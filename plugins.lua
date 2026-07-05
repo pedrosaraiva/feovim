@@ -3,6 +3,14 @@ require('nvim-web-devicons').setup()
 require('colorizer').setup({})
 require('diffview').setup() -- :DiffviewOpen / DiffviewClose
 require('spellsitter').setup()
+
+-- claude code integration
+require('claudecode').setup()
+nmap('<leader>ac', '<cmd>ClaudeCode<cr>')
+nmap('<leader>af', '<cmd>ClaudeCodeFocus<cr>')
+nmap('<leader>am', '<cmd>ClaudeCodeSelectModel<cr>')
+nmap('<leader>ab', '<cmd>ClaudeCodeAdd %<cr>')
+keymap('v', '<leader>as', '<cmd>ClaudeCodeSend<cr>')
 require('illuminate').configure()
 require('hop').setup()
 require('ibl').setup()

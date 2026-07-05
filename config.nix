@@ -114,6 +114,10 @@
     tagalong-vim
     codi-vim
 
+    # claude code integration
+    snacks-nvim
+    claudecode-nvim
+
     # debugging
     nvim-dap
     nvim-nio
