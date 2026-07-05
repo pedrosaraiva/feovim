@@ -55,7 +55,7 @@
           src = builtins.getAttr repo inputs;
         };
 
-        config = import ./config.nix { inherit pkgs plugin; };
+        config = import ./config.nix { inherit pkgs plugin inputs; };
       in
       with config; with pkgs; rec {
         apps.default = flake-utils.lib.mkApp {

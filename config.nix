@@ -1,4 +1,4 @@
-{ pkgs, plugin }: {
+{ pkgs, plugin, inputs }: {
   # binaries that should be added to neovims PATH
   extraPackages = with pkgs; [
     # utilities
@@ -115,7 +115,12 @@
     codi-vim
 
     # claude code integration
-    (plugin "snacks-nvim")
+    (pkgs.vimUtils.buildVimPlugin {
+      pname = "snacks-nvim";
+      version = "main";
+      src = builtins.getAttr "snacks-nvim" inputs;
+      doCheck = false;
+    })
     (plugin "claudecode-nvim")
 
     # debugging
