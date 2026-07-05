@@ -115,8 +115,8 @@
     codi-vim
 
     # claude code integration
-    snacks-nvim
-    claudecode-nvim
+    (plugin "snacks-nvim")
+    (plugin "claudecode-nvim")
 
     # debugging
     nvim-dap

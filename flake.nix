@@ -9,6 +9,8 @@
     earthly-vim = { url = "github:earthly/earthly.vim"; flake = false; };
     github-nvim-theme = { url = "github:projekt0n/github-nvim-theme"; flake = false; };
     whaler = { url = "github:SalOrak/whaler"; flake = false; };
+    claudecode-nvim = { url = "github:coder/claudecode.nvim"; flake = false; };
+    snacks-nvim = { url = "github:folke/snacks.nvim"; flake = false; };
   };
 
   outputs = { self, nixpkgs, flake-utils, ... }@inputs:
