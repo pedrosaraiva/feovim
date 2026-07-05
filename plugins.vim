@@ -7,7 +7,7 @@ lua require('which-key').add({ '<leader>c', group = 'commenter' })
 lua require('which-key').add({ '<leader>d', group = 'debugging' })
 
 "other
-nmap <leader>a :NvimTreeToggle<CR>
+nmap <leader>n :NvimTreeToggle<CR>
 nmap <leader>t :Vista!!<CR>
 nmap <leader>s :FzfLua grep search=""<CR>
 nmap <leader>g :LazyGit<CR>

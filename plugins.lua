@@ -6,6 +6,7 @@ require('spellsitter').setup()
 
 -- claude code integration
 require('claudecode').setup()
+require('which-key').add({ '<leader>a', group = 'claude code' })
 nmap('<leader>ac', '<cmd>ClaudeCode<cr>')
 nmap('<leader>af', '<cmd>ClaudeCodeFocus<cr>')
 nmap('<leader>am', '<cmd>ClaudeCodeSelectModel<cr>')
